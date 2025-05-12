@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPalette Quiz</title>
+    <!-- Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="text-container">
+                <h1>Study Hard, Quiz Harder!</h1>
+            </div>
+            <div class="character-container">
+                <img src="assets/quiz.png" alt="Character" class="character">
+                <img src="assets/message.png" alt="Speech Bubble" class="speech-bubble">
+            </div>
+        </div>
+
+        <div class="right-section">
+            <form class="quiz-form">
+                <h2>Is Mind Palette the best platform to study?</h2>
+                <div class="option">
+                    <input type="radio" id="yes" name="answer" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="definitely" name="answer" value="definitely">
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="always" name="answer" value="always">
+                    <label for="always">Always</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Submit <span class="loading">...</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

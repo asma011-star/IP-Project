@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #dfaf65;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Left Section */
+.left-section {
+    width: 45%;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    color: #50060c;
+}
+
+/* Character and Speech Bubble */
+.character-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.character {
+    width: 350px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -40px; /* Adjust this value to position the bubble correctly */
+    left: 60px; /* Adjust this value to position the bubble horizontally */
+    width: 210px; /* Set the width of the bubble image */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    background-color: #ffd166;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz Form */
+.quiz-form h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.option {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6a4c93;
+    border-radius: 50%;
+    appearance: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked {
+    background-color: #6a4c93;
+    border-color: #6a4c93;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Hover effect for options */
+input[type="radio"]:hover {
+    background-color: rgba(106, 76, 147, 0.2); /* Subtle background on hover */
+    border-color: #6a4c93;
+}
+
+label:hover {
+    color: #6a4c93;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #6a4c93; /* Solid background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+    width: 100%;
+    text-align: center; /* Center the text */
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #9c67ad; /* Darker shade on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Loading text */
+.loading {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}

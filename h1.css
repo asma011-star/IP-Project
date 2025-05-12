@@ -1,0 +1,145 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fdf3dd;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+/* Header */
+.header {
+    display: flex; /* Using flexbox to align the logo and title side by side */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #6a4c93;
+    margin-left: 10px; /* Adding space between logo and title */
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Logo styling */
+.logo {
+    height: 50px; /* Set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 280px;
+    position: relative; /* Added for absolute positioning of the plus sign */
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    margin-bottom: 5px;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Plus sign positioning */
+.card .plus {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px; /* Increased size for visibility */
+    color: #444;
+    font-weight: bold;
+}
+
+/* Big card style */
+.big-card {
+    grid-row: span 2;
+}
+.big-card img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-left: 20px;
+
+  }
+
+/* Specific card styles */
+.note-storage {
+    background-color: #d6e8f7;
+    color: #cb962e;
+}
+
+.ai-assistant {
+    background-color: #caaacd;
+    color: #fdf3dd;
+}
+
+.quiz-mode {
+    background-color: #dfaf65;
+    color: #fdf3dd;
+}
+
+.flash-card-generator {
+    background-color: #a8dde2;
+    color: #2c2f6f;
+}
+
+.study-planner {
+    background-color: #c2cc8f;
+    color: #6a73d6;
+}
+
+.study-tracker {
+    background-color: #ff92a4;
+    color: #2c2f6f;
+}
+
+.daily-revision-planner {
+    background-color: #f9dca8;
+    color: #ef601e;
+}
